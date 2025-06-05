@@ -1,11 +1,11 @@
 package com.duovialove.viewmodelcomposestatetutorial
 
-import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.*
 import androidx.lifecycle.ViewModel
 
 class UserViewModel : ViewModel() {
 
-    var userName = mutableStateOf("Gedson").value
+    var userName by mutableStateOf("Gedson")
         private set
 
     fun updateUserName(newName:String){
